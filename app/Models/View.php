@@ -8,14 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class View extends Model
 {
     use HasFactory;
+
     protected $fillable =[
-        'user_id',
-        'recipient_name',
-        'phone_number',
-        'street_address',
-        'city',
-        'state',
-        'postal_code',
-        'country',
+        'product_id',
+        'view_count',
+        'last_viewed_at',
     ];
 }

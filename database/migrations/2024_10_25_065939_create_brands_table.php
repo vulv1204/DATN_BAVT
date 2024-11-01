@@ -16,7 +16,6 @@ class CreateBrandsTable extends Migration
         Schema::create('brands', function (Blueprint $table) {
             $table->id(); // Cột id tự tăng
             $table->string('name')->unique(); // Tên hãng nước hoa (duy nhất)
-            $table->string('founded_year'); // Năm thành lập của hãng (không duy nhất)
             $table->string('country'); // Tên quốc gia (không duy nhất)
             $table->text('description')->nullable(); // Mô tả thương hiệu (có thể để trống)
             $table->string('logo')->nullable(); // Đường dẫn đến logo của thương hiệu (có thể để trống)
