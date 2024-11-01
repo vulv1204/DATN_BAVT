@@ -10,9 +10,12 @@ class Product extends Model
     use HasFactory;
 
     const STATUS = [
-        'Bán' => 'Bán sản phẩm',
-        'Không bán' => 'Không bán sản phẩm',
+        'sell' => 'Bán sản phẩm',
+        'do not sell' => 'Không bán sản phẩm',
     ];
+
+    const STATUS_SELL = 'sell';
+    const STATUS_NOT_SELL = 'not sell';
 
     protected $fillable =[
         'name',

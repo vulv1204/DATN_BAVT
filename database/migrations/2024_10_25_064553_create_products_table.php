@@ -1,7 +1,6 @@
 <?php
 
 use App\Models\Brand;
-use App\Models\Brands;
 use App\Models\Category;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -21,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('name'); // Tên sản phẩm
             $table->string('description')->nullable(); // Mô tả sản phẩm
             $table->decimal('price', 10, 2); // Giá sản phẩm 
-            $table->string('status')->default(\App\Models\Product::STATUS);
+            $table->string('status')->default(\App\Models\Product::STATUS_SELL);
             $table->text('content')->nullable(); // Mô tả sản phẩm
             $table->foreignIdFor(Category::class)->constrained(); 
             $table->foreignIdFor(Brand::class)->constrained(); 
