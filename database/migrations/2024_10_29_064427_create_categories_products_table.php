@@ -16,13 +16,12 @@ class CreateCategoriesProductsTable extends Migration
     public function up()
     {
         Schema::create('categories_products', function (Blueprint $table) {
-            $table->id();
             
             $table->foreignIdFor(Category::class)->constrained();
             $table->foreignIdFor(Product::class)->constrained();
 
             
-            $table->timestamps();
+            $table->primary(['category_id', 'product_id']);
         });
     }
 
