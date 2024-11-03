@@ -25,7 +25,31 @@ class Product extends Model
         'categories_products_id',
         'brand_id',
     ];
-    public function product_img(){
+    public function product_imgs(){
         return $this->hasMany(ProductImg::class);
+    }
+
+    public function category_product() {
+        return $this->belongsTo(CategoryProduct::class);
+    }
+
+    public function brand() {
+        return $this->belongsTo(Brand::class);
+    }
+
+    public function orderItems(){
+        return $this->hasMany(OrderItem::class);
+    }
+
+    public function productImgs(){
+        return $this->hasMany(ProductImg::class);
+    }
+
+    public function productSizes(){
+        return $this->hasMany(ProductSize::class);
+    }
+
+    public function views(){
+        return $this->hasMany(View::class);
     }
 }

@@ -18,7 +18,11 @@ class Address extends Model
         'country',
         'is_default',
     ];
-    public function users(){
-        return $this->hasMany(User::class);
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
+
+    public function orders(){
+        return $this->hasMany(Order::class);
     }
 }

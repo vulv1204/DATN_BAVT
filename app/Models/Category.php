@@ -12,10 +12,14 @@ class Category extends Model
         'name',
         'display_oder',
         'categories_products_id'
-
     ];
-    public function users()
+    public function products()
     {
-        return $this->hasMany(User::class);
+        return $this->hasMany(Product::class);
     }
+
+    public function category_product() {
+        return $this->belongsTo(CategoryProduct::class);
+    }
+
 }

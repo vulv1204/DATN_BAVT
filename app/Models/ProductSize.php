@@ -16,7 +16,11 @@ class ProductSize extends Model
         'img',
         'quantity',
     ];
-    public function users(){
-        return $this->hasMany(User::class);
+    public function carts(){
+        return $this->hasMany(Cart::class);
+    }
+
+    public function product() {
+        return $this->belongsTo(Product::class);
     }
 }

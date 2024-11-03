@@ -14,7 +14,11 @@ class Cart extends Model
         'product_size_id',
         'quantity',
     ];
-    public function users(){
-        return $this->hasMany(User::class);
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
+
+    public function productSize(){
+        return $this->belongsTo(ProductSize::class);
     }
 }

@@ -46,7 +46,15 @@ class Order extends Model
         'status_payment',
         'total_price',
     ];
-    public function users(){
-        return $this->hasMany(User::class);
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
+
+    public function address() {
+        return $this->belongsTo(Address::class);
+    }
+
+    public function orderItems(){
+        return $this->hasMany(OrderItem::class);
     }
 }

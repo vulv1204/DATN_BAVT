@@ -16,7 +16,7 @@ class Voucher extends Model
         'start_date',
         'end_date',
     ];
-    public function users(){
-        return $this->hasMany(User::class);
+    public function user(){
+        return $this->belongsTo(User::class);
     }
 }

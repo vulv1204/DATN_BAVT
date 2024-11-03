@@ -14,7 +14,11 @@ class OrderItem extends Model
         'product_size',
         'quantity',
     ];
-    public function users(){
-        return $this->hasMany(User::class);
+    public function order() {
+        return $this->belongsTo(Order::class);
+    }
+
+    public function product() {
+        return $this->belongsTo(Product::class);
     }
 }

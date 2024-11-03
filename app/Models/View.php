@@ -14,4 +14,9 @@ class View extends Model
         'view_count',
         'last_viewed_at',
     ];
+
+    public function product() {
+        return $this->belongsTo(Product::class);
+    }
+    
 }
