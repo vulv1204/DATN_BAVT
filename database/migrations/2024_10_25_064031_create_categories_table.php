@@ -18,7 +18,7 @@ class CreateCategoriesTable extends Migration
             $table->id(); // Tự động tạo cột id tự tăng
             $table->string('name'); // Cột tên của category
             $table->string('display_oder')->nullable(); // Thứ tự oder
-            $table->foreignIdFor(Category::class)->constrained();
+            $table->boolean('status')->default(false);
             $table->timestamps(); // Tạo cột created_at và updated_at
         });
     }

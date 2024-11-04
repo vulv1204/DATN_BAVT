@@ -11,7 +11,7 @@ class Category extends Model
     protected $fillable = [
         'name',
         'display_oder',
-        'categories_products_id'
+        'category_id'
     ];
     public function products()
     {
