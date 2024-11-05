@@ -9,18 +9,19 @@ class ProductSize extends Model
 {
     use HasFactory;
 
-    protected $fillable =[
+    protected $fillable = [
         'product_id',
-        'size',
+        'variant',
         'price',
         'img',
         'quantity',
+        'status',
     ];
-    public function carts(){
-        return $this->hasMany(Cart::class);
-    }
 
-    public function product() {
+    // Thiết lập quan hệ với model `Product`
+    public function product()
+    {
         return $this->belongsTo(Product::class);
     }
 }
+

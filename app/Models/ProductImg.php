@@ -9,12 +9,15 @@ class ProductImg extends Model
 {
     use HasFactory;
 
-    protected $fillable =[
-        'img',
+    protected $fillable = [
         'product_id',
+        'img',
     ];
 
-    public function product() {
+    // Thiết lập quan hệ với model `Product`
+    public function product()
+    {
         return $this->belongsTo(Product::class);
     }
 }
+

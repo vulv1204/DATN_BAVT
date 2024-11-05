@@ -9,47 +9,37 @@ class Product extends Model
 {
     use HasFactory;
 
-    const STATUS = [
-        'sell' => 'Bán sản phẩm',
-        'do not sell' => 'Không bán sản phẩm',
-    ];
-
-    const STATUS_SELL = 'sell';
-    const STATUS_NOT_SELL = 'not sell';
-
-    protected $fillable =[
+    protected $fillable = [
         'name',
         'description',
+        'view',
+        'price',
         'status',
         'content',
-        'categories_products_id',
         'brand_id',
     ];
-    public function product_imgs(){
-        return $this->hasMany(ProductImg::class);
-    }
 
-    public function category_product() {
-        return $this->belongsTo(CategoryProduct::class);
-    }
-
-    public function brand() {
+    // Thiết lập quan hệ với model `Brand`
+    public function brand()
+    {
         return $this->belongsTo(Brand::class);
     }
 
-    public function orderItems(){
-        return $this->hasMany(OrderItem::class);
-    }
-
-    public function productImgs(){
+    // Thiết lập quan hệ với model `ProductImg`
+    public function productImgs()
+    {
         return $this->hasMany(ProductImg::class);
     }
 
-    public function productSizes(){
+    // Thiết lập quan hệ với model `ProductSize`
+    public function productSizes()
+    {
         return $this->hasMany(ProductSize::class);
     }
 
-    public function views(){
-        return $this->hasMany(View::class);
+    // Thiết lập quan hệ với model `Category`
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class, 'category_products');
     }
 }

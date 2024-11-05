@@ -2,17 +2,17 @@
 
 namespace Database\Seeders;
 
-use App\Models\Comments;
+use App\Models\Cart;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-class CommentsSeeders extends Seeder
+class CartSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Comments::factory()->count(5)->create();
+        Cart::factory()->count(5)->create();
     }
 }
