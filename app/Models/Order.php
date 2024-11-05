@@ -60,12 +60,4 @@ class Order extends Model
     public function orderItems(){
         return $this->hasMany(OrderItem::class);
     }
-    // Quan hệ với model `Address` 
-    public function address() { 
-        return $this->belongsTo(Address::class); 
-    } 
-    // Quan hệ với model `OrderItem` 
-    public function orderItems() {
-         return $this->hasMany(OrderItem::class);
-}
 }
