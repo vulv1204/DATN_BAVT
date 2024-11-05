@@ -49,15 +49,15 @@ class Order extends Model
         'status_payment',
         'total_price',
     ];
-    public function users(){
-        return $this->hasMany(User::class);
+    public function user() {
+        return $this->belongsTo(User::class);
     }
-    // Quan hệ với model `Address` 
-    public function address() { 
-        return $this->belongsTo(Address::class); 
-    } 
-    // Quan hệ với model `OrderItem` 
-    public function orderItems() {
-         return $this->hasMany(OrderItem::class);
-}
+
+    public function address() {
+        return $this->belongsTo(Address::class);
+    }
+
+    public function orderItems(){
+        return $this->hasMany(OrderItem::class);
+    }
 }
