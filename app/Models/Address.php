@@ -9,16 +9,18 @@ class Address extends Model
 {
     use HasFactory;
 
-    protected $fillable =[
+    protected $fillable = [
         'user_id',
         'address',
         'city',
-        'District',
-        'city',
+        'district',
         'country',
         'is_default',
     ];
-    public function users(){
-        return $this->hasMany(User::class);
+
+    // Quan hệ với model `User`
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }
