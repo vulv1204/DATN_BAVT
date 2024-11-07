@@ -5,30 +5,30 @@
 @endsection
 
 @section('content')
-<div class="row">
-    
-    <!-- start page title -->
     <div class="row">
-        <div class="col-12">
-            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                <h4 class="mb-sm-0">Datatables</h4>
 
-                <div class="page-title-right">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
-                        <li class="breadcrumb-item active">Datatables</li>
-                    </ol>
+        <!-- start page title -->
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                    <h4 class="mb-sm-0">Datatables</h4>
+
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
+                            <li class="breadcrumb-item active">Datatables</li>
+                        </ol>
+                    </div>
+
                 </div>
-
             </div>
         </div>
-    </div>
-    <!-- end page title -->
+        <!-- end page title -->
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
                     <h5 class="card-title mb-0">Danh sách</h5>
-                    <a href="" class="btn btn-primary">Thêm mới</a>
+                    <a href="{{ route('categories.create')}}" class="btn btn-primary">Thêm mới</a>
                 </div>
                 <div class="card-body">
                     <table id="example" class="table table-bordered dt-responsive nowrap table-striped align-middle"
@@ -36,25 +36,54 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Name</th>
-                                <th>Cover</th>
-                                <th>Is active</th>
+                                <th>Tên danh mục</th>
+                                <th>display_order</th>
+                                <th>Trạng thái</th>
+                                <th>Sản phẩm</th>
                                 <th>created_at</th>
                                 <th>updated_at</th>
-                                <th>action</th>
+                                <th>Chức năng</th>
                             </tr>
                         </thead>
                         <tbody>
-                            
-                            
+                            @foreach ($data as $categories)
+                                <tr>
+                                    <td>{{ $categories->id}}</td>
+                                    <td>{{ $categories->name}}</td>
+                                    <td>{{ $categories->display_order}}</td>
+                                    <td>@if ( $categories->status == 0)
+                                        <p>Hiển thị</p>
+                                    @else
+                                        <p>Ẩn</p>
+                                    @endif</td>
+                                    <td>
+                                        @foreach ($categories->products as $product)
+                                            <span class="badge bg-info">
+                                                {{$product->name}}
+                                            </span>
+                                        @endforeach
+                                    </td>
+                                    <td>{{ $categories->created_at}}</td>
+                                    <td>{{ $categories->updated_at}}</td>
+                                    <td>
+                                        <a href="{{ route('categories.show', $categories)}}" class="btn btn-info">Xem chi tiết</a>
+                                        <a href="{{ route('categories.edit', $categories)}}" class="btn btn-warning mt-2 mb-2">Chỉnh sửa</a>
+
+                                        <form action="{{ route('categories.destroy', $categories)}}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger">Xóa</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            @endforeach
+
                         </tbody>
                     </table>
                 </div>
             </div>
         </div><!--end col-->
     </div><!--end row-->
-
-    
 @endsection
 
 @section('style-libs')
@@ -81,6 +110,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
 
-    
+    <script>
+        new DataTable("#example", {
+            order: [
+                [0, 'desc']
+            ]
+        });
+    </script>
 @endsection
-
