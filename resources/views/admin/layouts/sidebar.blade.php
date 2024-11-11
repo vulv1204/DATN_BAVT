@@ -41,11 +41,11 @@
                     <div class="collapse menu-dropdown" id="sidebarDashboards">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="dashboard-analytics.html" class="nav-link" data-key="t-analytics"> Danh sách
-                                </a>
+
+                                <a href="{{ route('categories.index')}}" class="nav-link" data-key="t-analytics"> Danh sách </a>
                             </li>
                             <li class="nav-item">
-                                <a href="dashboard-crm.html" class="nav-link" data-key="t-crm"> Thêm </a>
+                                <a href="{{ route('categories.create')}}" class="nav-link" data-key="t-crm"> Thêm </a>
                             </li>
                         </ul>
                     </div>
