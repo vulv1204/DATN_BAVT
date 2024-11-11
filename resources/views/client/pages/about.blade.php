@@ -2,7 +2,7 @@
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from htmldemo.net/corano/corano/login-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 09:54:01 GMT -->
+<!-- Mirrored from htmldemo.net/corano/corano/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 09:54:01 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,28 +11,28 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/img/favicon.ico')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
     <!-- CSS
 	============================================ -->
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{asset('assets/css/vendor/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <!-- Pe-icon-7-stroke CSS -->
-    <link rel="stylesheet" href="{{asset('assets/css/vendor/pe-icon-7-stroke.css')}}">
+    <link rel="stylesheet" href="assets/css/vendor/pe-icon-7-stroke.css">
     <!-- Font-awesome CSS -->
-    <link rel="stylesheet" href="{{asset('assets/css/vendor/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
     <!-- Slick slider css -->
-    <link rel="stylesheet" href="{{asset('assets/css/plugins/slick.min.css')}}">
+    <link rel="stylesheet" href="assets/css/plugins/slick.min.css">
     <!-- animate css -->
-    <link rel="stylesheet" href="{{asset('assets/css/plugins/animate.css')}}">
+    <link rel="stylesheet" href="assets/css/plugins/animate.css">
     <!-- Nice Select css -->
-    <link rel="stylesheet" href="{{asset('assets/css/plugins/nice-select.css')}}">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
     <!-- jquery UI css -->
-    <link rel="stylesheet" href="{{asset('assets/css/plugins/jqueryui.min.css')}}">
+    <link rel="stylesheet" href="assets/css/plugins/jqueryui.min.css">
     <!-- main style css -->
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
@@ -476,7 +476,7 @@
                             <nav aria-label="breadcrumb">
                                 <ul class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i></a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">login-Register</li>
+                                    <li class="breadcrumb-item active" aria-current="page">About us</li>
                                 </ul>
                             </nav>
                         </div>
@@ -486,87 +486,237 @@
         </div>
         <!-- breadcrumb area end -->
 
-        <!-- login register wrapper start -->
-        <div class="login-register-wrapper section-padding">
+        <!-- about us area start -->
+        <section class="about-us section-padding">
             <div class="container">
-                <div class="member-area-from-wrap">
-                    <div class="row">
-                        <!-- Login Content Start -->
-                        <div class="col-lg-6">
-                            <div class="login-reg-form-wrap">
-                                <h5>Sign In</h5>
-                                <form action="#" method="post">
-                                    <div class="single-input-item">
-                                        <input type="email" placeholder="Email or Username" required />
-                                    </div>
-                                    <div class="single-input-item">
-                                        <input type="password" placeholder="Enter your Password" required />
-                                    </div>
-                                    <div class="single-input-item">
-                                        <div class="login-reg-form-meta d-flex align-items-center justify-content-between">
-                                            <div class="remember-meta">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="rememberMe">
-                                                    <label class="custom-control-label" for="rememberMe">Remember Me</label>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="forget-pwd">Forget Password?</a>
-                                        </div>
-                                    </div>
-                                    <div class="single-input-item">
-                                        <button class="btn btn-sqr">Login</button>
-                                    </div>
-                                </form>
-                            </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="about-thumb">
+                            <img src="assets/img/about/about.jpg" alt="about thumb">
                         </div>
-                        <!-- Login Content End -->
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="about-content">
+                            <h2 class="about-title">About Us</h2>
+                            <h5 class="about-sub-title">
+                                Founded in 1986, I.D. Jewelry, LLC, a family owned & operated business has become a house-hold name in states all over the USA as well as countries all over the world.
+                            </h5>
+                            <p>For those that rather the full immersion of the in store experience we welcome your company and look forward to meeting you face to face. Being located in the 47 street diamond district, known to be the largest diamond.</p>
+                            <p>Based in the heart of New York’s Diamond District, also known as the NYC diamond district, I. D. Jewelry has some of the most competitively priced in the market. It is our goal to supply our clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about us area end -->
 
-                        <!-- Register Content Start -->
-                        <div class="col-lg-6">
-                            <div class="login-reg-form-wrap sign-up-form">
-                                <h5>Singup Form</h5>
-                                <form action="#" method="post">
-                                    <div class="single-input-item">
-                                        <input type="text" placeholder="Full Name" required />
-                                    </div>
-                                    <div class="single-input-item">
-                                        <input type="email" placeholder="Enter your Email" required />
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="single-input-item">
-                                                <input type="password" placeholder="Enter your Password" required />
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="single-input-item">
-                                                <input type="password" placeholder="Repeat your Password" required />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-input-item">
-                                        <div class="login-reg-form-meta">
-                                            <div class="remember-meta">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="subnewsletter">
-                                                    <label class="custom-control-label" for="subnewsletter">Subscribe
-                                                        Our Newsletter</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-input-item">
-                                        <button class="btn btn-sqr">Register</button>
-                                    </div>
-                                </form>
-                            </div>
+        <!-- choosing area start -->
+        <div class="choosing-area section-padding pt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title text-center">
+                            <h2 class="title">Why Choose Us</h2>
+                            <p>Accumsan vitae pede lacus ut ullamcorper sollicitudin quisque libero</p>
                         </div>
-                        <!-- Register Content End -->
+                    </div>
+                </div>
+                <div class="row mbn-30">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single-choose-item text-center mb-30">
+                            <i class="fa fa-globe"></i>
+                            <h4>free shipping</h4>
+                            <p>Amadea Shop is a very slick and clean e-commerce template with endless possibilities.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single-choose-item text-center mb-30">
+                            <i class="fa fa-plane"></i>
+                            <h4>fast delivery</h4>
+                            <p>Amadea Shop is a very slick and clean e-commerce template with endless possibilities.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single-choose-item text-center mb-30">
+                            <i class="fa fa-comments"></i>
+                            <h4>customers support</h4>
+                            <p>Amadea Shop is a very slick and clean e-commerce template with endless possibilities.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- login register wrapper end -->
+        <!-- choosing area end -->
+
+        <!-- testimonial area start -->
+        <section class="testimonial-area section-padding bg-img" data-bg="assets/img/testimonial/testimonials-bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- section title start -->
+                        <div class="section-title text-center">
+                            <h2 class="title">testimonials</h2>
+                            <p class="sub-title">What they say</p>
+                        </div>
+                        <!-- section title start -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="testimonial-thumb-wrapper">
+                            <div class="testimonial-thumb-carousel">
+                                <div class="testimonial-thumb">
+                                    <img src="assets/img/testimonial/testimonial-1.png" alt="testimonial-thumb">
+                                </div>
+                                <div class="testimonial-thumb">
+                                    <img src="assets/img/testimonial/testimonial-2.png" alt="testimonial-thumb">
+                                </div>
+                                <div class="testimonial-thumb">
+                                    <img src="assets/img/testimonial/testimonial-3.png" alt="testimonial-thumb">
+                                </div>
+                                <div class="testimonial-thumb">
+                                    <img src="assets/img/testimonial/testimonial-2.png" alt="testimonial-thumb">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content-wrapper">
+                            <div class="testimonial-content-carousel">
+                                <div class="testimonial-content">
+                                    <p>Vivamus a lobortis ipsum, vel condimentum magna. Etiam id turpis tortor. Nunc scelerisque, nisi a blandit varius, nunc purus venenatis ligula, sed venenatis orci augue nec sapien. Cum sociis natoque</p>
+                                    <div class="ratings">
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                    </div>
+                                    <h5 class="testimonial-author">lindsy niloms</h5>
+                                </div>
+                                <div class="testimonial-content">
+                                    <p>Vivamus a lobortis ipsum, vel condimentum magna. Etiam id turpis tortor. Nunc scelerisque, nisi a blandit varius, nunc purus venenatis ligula, sed venenatis orci augue nec sapien. Cum sociis natoque</p>
+                                    <div class="ratings">
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                    </div>
+                                    <h5 class="testimonial-author">Daisy Millan</h5>
+                                </div>
+                                <div class="testimonial-content">
+                                    <p>Vivamus a lobortis ipsum, vel condimentum magna. Etiam id turpis tortor. Nunc scelerisque, nisi a blandit varius, nunc purus venenatis ligula, sed venenatis orci augue nec sapien. Cum sociis natoque</p>
+                                    <div class="ratings">
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                    </div>
+                                    <h5 class="testimonial-author">Anamika lusy</h5>
+                                </div>
+                                <div class="testimonial-content">
+                                    <p>Vivamus a lobortis ipsum, vel condimentum magna. Etiam id turpis tortor. Nunc scelerisque, nisi a blandit varius, nunc purus venenatis ligula, sed venenatis orci augue nec sapien. Cum sociis natoque</p>
+                                    <div class="ratings">
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                    </div>
+                                    <h5 class="testimonial-author">Maria Mora</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial area end -->
+
+        <!-- team area start -->
+        <div class="team-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title text-center">
+                            <h2 class="title">Our Team</h2>
+                            <p>Accumsan vitae pede lacus ut ullamcorper sollicitudin quisque libero</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mbn-30">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="team-member mb-30">
+                            <div class="team-thumb">
+                                <img src="assets/img/team/team_member_1.jpg" alt="">
+                                <div class="team-social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content text-center">
+                                <h6 class="team-member-name">Jonathan Scott</h6>
+                                <p>CEO</p>
+                            </div>
+                        </div>
+                    </div> <!-- end single team member -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="team-member mb-30">
+                            <div class="team-thumb">
+                                <img src="assets/img/team/team_member_2.jpg" alt="">
+                                <div class="team-social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content text-center">
+                                <h6 class="team-member-name">oliver bastin</h6>
+                                <p>designer</p>
+                            </div>
+                        </div>
+                    </div> <!-- end single team member -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="team-member mb-30">
+                            <div class="team-thumb">
+                                <img src="assets/img/team/team_member_3.jpg" alt="">
+                                <div class="team-social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content text-center">
+                                <h6 class="team-member-name">erik jonson</h6>
+                                <p>developer</p>
+                            </div>
+                        </div>
+                    </div> <!-- end single team member -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="team-member mb-30">
+                            <div class="team-thumb img-full">
+                                <img src="assets/img/team/team_member_4.jpg" alt="">
+                                <div class="team-social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content text-center">
+                                <h6 class="team-member-name">jon doe</h6>
+                                <p>marketing officer</p>
+                            </div>
+                        </div>
+                    </div> <!-- end single team member -->
+                </div>
+            </div>
+        </div>
+        <!-- team area end -->
     </main>
 
     <!-- Scroll to top start -->
@@ -862,35 +1012,35 @@
 ============================================ -->
 
     <!-- Modernizer JS -->
-    <script src="{{asset('assets/js/vendor/modernizr-3.6.0.min.js')}}"></script>
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <!-- jQuery JS -->
-    <script src="{{asset('assets/js/vendor/jquery-3.6.0.min.js')}}"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS -->
-    <script src="{{asset('assets/js/vendor/bootstrap.bundle.min.js')}}"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
     <!-- slick Slider JS -->
-    <script src="{{asset('assets/js/plugins/slick.min.js')}}"></script>
+    <script src="assets/js/plugins/slick.min.js"></script>
     <!-- Countdown JS -->
-    <script src="{{asset('assets/js/plugins/countdown.min.js')}}"></script>
+    <script src="assets/js/plugins/countdown.min.js"></script>
     <!-- Nice Select JS -->
-    <script src="{{asset('assets/js/plugins/nice-select.min.js')}}"></script>
+    <script src="assets/js/plugins/nice-select.min.js"></script>
     <!-- jquery UI JS -->
-    <script src="{{asset('assets/js/plugins/jqueryui.min.js')}}"></script>
+    <script src="assets/js/plugins/jqueryui.min.js"></script>
     <!-- Image zoom JS -->
-    <script src="{{asset('assets/js/plugins/image-zoom.min.js')}}"></script>
+    <script src="assets/js/plugins/image-zoom.min.js"></script>
     <!-- Images loaded JS -->
-    <script src="{{asset('assets/js/plugins/imagesloaded.pkgd.min.js')}}"></script>
+    <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
     <!-- mail-chimp active js -->
-    <script src="{{asset('assets/js/plugins/ajaxchimp.js')}}"></script>
+    <script src="assets/js/plugins/ajaxchimp.js"></script>
     <!-- contact form dynamic js -->
-    <script src="{{asset('assets/js/plugins/ajax-mail.js')}}"></script>
+    <script src="assets/js/plugins/ajax-mail.js"></script>
     <!-- google map api -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfmCVTjRI007pC1Yk2o2d_EhgkjTsFVN8"></script>
     <!-- google map active js -->
-    <script src="{{asset('assets/js/plugins/google-map.js')}}"></script>
+    <script src="assets/js/plugins/google-map.js"></script>
     <!-- Main JS -->
-    <script src="{{asset('assets/js/main.js')}}"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 
-<!-- Mirrored from htmldemo.net/corano/corano/login-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 09:54:01 GMT -->
+<!-- Mirrored from htmldemo.net/corano/corano/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 09:54:03 GMT -->
 </html>

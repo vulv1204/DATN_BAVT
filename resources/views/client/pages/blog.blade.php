@@ -2,7 +2,7 @@
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from htmldemo.net/corano/corano/login-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 09:54:01 GMT -->
+<!-- Mirrored from htmldemo.net/corano/corano/blog-list-left-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 09:54:05 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -476,7 +476,7 @@
                             <nav aria-label="breadcrumb">
                                 <ul class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i></a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">login-Register</li>
+                                    <li class="breadcrumb-item active" aria-current="page">blog list left sidebar</li>
                                 </ul>
                             </nav>
                         </div>
@@ -486,87 +486,258 @@
         </div>
         <!-- breadcrumb area end -->
 
-        <!-- login register wrapper start -->
-        <div class="login-register-wrapper section-padding">
+        <!-- blog main wrapper start -->
+        <div class="blog-main-wrapper section-padding">
             <div class="container">
-                <div class="member-area-from-wrap">
-                    <div class="row">
-                        <!-- Login Content Start -->
-                        <div class="col-lg-6">
-                            <div class="login-reg-form-wrap">
-                                <h5>Sign In</h5>
-                                <form action="#" method="post">
-                                    <div class="single-input-item">
-                                        <input type="email" placeholder="Email or Username" required />
-                                    </div>
-                                    <div class="single-input-item">
-                                        <input type="password" placeholder="Enter your Password" required />
-                                    </div>
-                                    <div class="single-input-item">
-                                        <div class="login-reg-form-meta d-flex align-items-center justify-content-between">
-                                            <div class="remember-meta">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="rememberMe">
-                                                    <label class="custom-control-label" for="rememberMe">Remember Me</label>
-                                                </div>
+                <div class="row">
+                    <div class="col-lg-3 order-2 order-lg-1">
+                        <aside class="blog-sidebar-wrapper">
+                            <div class="blog-sidebar">
+                                <h5 class="title">search</h5>
+                                <div class="sidebar-serch-form">
+                                    <form action="#">
+                                        <input type="text" class="search-field" placeholder="search here">
+                                        <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </div> <!-- single sidebar end -->
+                            <div class="blog-sidebar">
+                                <h5 class="title">categories</h5>
+                                <ul class="blog-archive blog-category">
+                                    <li><a href="#">Barber (10)</a></li>
+                                    <li><a href="#">fashion (08)</a></li>
+                                    <li><a href="#">handbag (07)</a></li>
+                                    <li><a href="#">Jewelry (14)</a></li>
+                                    <li><a href="#">food (10)</a></li>
+                                </ul>
+                            </div> <!-- single sidebar end -->
+                            <div class="blog-sidebar">
+                                <h5 class="title">Blog Archives</h5>
+                                <ul class="blog-archive">
+                                    <li><a href="#">January (10)</a></li>
+                                    <li><a href="#">February (08)</a></li>
+                                    <li><a href="#">March (07)</a></li>
+                                    <li><a href="#">April (14)</a></li>
+                                    <li><a href="#">May (10)</a></li>
+                                </ul>
+                            </div> <!-- single sidebar end -->
+                            <div class="blog-sidebar">
+                                <h5 class="title">recent post</h5>
+                                <div class="recent-post">
+                                    <div class="recent-post-item">
+                                        <figure class="product-thumb">
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/blog-img1.jpg" alt="blog image">
+                                            </a>
+                                        </figure>
+                                        <div class="recent-post-description">
+                                            <div class="product-name">
+                                                <h6><a href="blog-details.html">Auctor gravida enim</a></h6>
+                                                <p>march 10 2019</p>
                                             </div>
-                                            <a href="#" class="forget-pwd">Forget Password?</a>
                                         </div>
                                     </div>
-                                    <div class="single-input-item">
-                                        <button class="btn btn-sqr">Login</button>
+                                    <div class="recent-post-item">
+                                        <figure class="product-thumb">
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/blog-img2.jpg" alt="blog image">
+                                            </a>
+                                        </figure>
+                                        <div class="recent-post-description">
+                                            <div class="product-name">
+                                                <h6><a href="blog-details.html">gravida auctor dnim</a></h6>
+                                                <p>march 18 2019</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </form>
+                                    <div class="recent-post-item">
+                                        <figure class="product-thumb">
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/blog-img3.jpg" alt="blog image">
+                                            </a>
+                                        </figure>
+                                        <div class="recent-post-description">
+                                            <div class="product-name">
+                                                <h6><a href="blog-details.html">enim auctor gravida</a></h6>
+                                                <p>march 14 2019</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- single sidebar end -->
+                            <div class="blog-sidebar">
+                                <h5 class="title">Tags</h5>
+                                <ul class="blog-tags">
+                                    <li><a href="#">camera</a></li>
+                                    <li><a href="#">computer</a></li>
+                                    <li><a href="#">bag</a></li>
+                                    <li><a href="#">watch</a></li>
+                                    <li><a href="#">smartphone</a></li>
+                                    <li><a href="#">shoes</a></li>
+                                </ul>
+                            </div> <!-- single sidebar end -->
+                        </aside>
+                    </div>
+                    <div class="col-lg-9 order-1 order-lg-2">
+                        <div class="blog-item-wrapper blog-list-inner">
+                            <!-- blog item wrapper end -->
+                            <div class="row mbn-30">
+                                <div class="col-12">
+                                    <!-- blog post item start -->
+                                    <div class="blog-post-item mb-30">
+                                        <figure class="blog-thumb">
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/blog-img1.jpg" alt="blog image">
+                                            </a>
+                                        </figure>
+                                        <div class="blog-content">
+                                            <h4 class="blog-title">
+                                                <a href="blog-details.html">Celebrity Daughter Opens Up About Having Her Eye Color Changed</a>
+                                            </h4>
+                                            <div class="blog-meta">
+                                                <p>10/04/2019 | <a href="#">Corano</a></p>
+                                            </div>
+                                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ac ante egestas hendrerit. Aliquam et metus pharetra</p>
+                                            <a class="blog-read-more" href="blog-details.html">Read More...</a>
+                                        </div>
+                                    </div>
+                                    <!-- blog post item end -->
+                                </div>
+                                <div class="col-12">
+                                    <!-- blog post item start -->
+                                    <div class="blog-post-item mb-30">
+                                        <figure class="blog-thumb">
+                                            <div class="blog-carousel-2 slick-row-15 slick-arrow-style slick-dot-style">
+                                                <div class="blog-single-slide">
+                                                    <a href="blog-details.html">
+                                                        <img src="assets/img/blog/blog-img5.jpg" alt="blog image">
+                                                    </a>
+                                                </div>
+                                                <div class="blog-single-slide">
+                                                    <a href="blog-details.html">
+                                                        <img src="assets/img/blog/blog-img4.jpg" alt="blog image">
+                                                    </a>
+                                                </div>
+                                                <div class="blog-single-slide">
+                                                    <a href="blog-details.html">
+                                                        <img src="assets/img/blog/blog-img3.jpg" alt="blog image">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                        <div class="blog-content">
+                                            <h4 class="blog-title">
+                                                <a href="blog-details.html">Lotto Winner Offering Up Money To Any Man That Will Date Her</a>
+                                            </h4>
+                                            <div class="blog-meta">
+                                                <p>12/04/2019 | <a href="#">Corano</a></p>
+                                            </div>
+                                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ac ante egestas hendrerit. Aliquam et metus pharetra</p>
+                                            <a class="blog-read-more" href="blog-details.html">Read More...</a>
+                                        </div>
+                                    </div>
+                                    <!-- blog post item end -->
+                                </div>
+                                <div class="col-12">
+                                    <!-- blog post item start -->
+                                    <div class="blog-post-item mb-30">
+                                        <figure class="blog-thumb ratio ratio-16x9">
+                                            <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/501298839&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+                                        </figure>
+                                        <div class="blog-content">
+                                            <h4 class="blog-title">
+                                                <a href="blog-details.html">Children Left Home Alone For 4 Days In TV series Experiment</a>
+                                            </h4>
+                                            <div class="blog-meta">
+                                                <p>15/04/2019 | <a href="#">Corano</a></p>
+                                            </div>
+                                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ac ante egestas hendrerit. Aliquam et metus pharetra</p>
+                                            <a class="blog-read-more" href="blog-details.html">Read More...</a>
+                                        </div>
+                                    </div>
+                                    <!-- blog post item end -->
+                                </div>
+                                <div class="col-12">
+                                    <!-- blog post item start -->
+                                    <div class="blog-post-item mb-30">
+                                        <figure class="blog-thumb ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/4qNHr0W6F0o" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        </figure>
+                                        <div class="blog-content">
+                                            <h4 class="blog-title">
+                                                <a href="blog-details.html">People are Willing Lie When Comes Money, According to Research</a>
+                                            </h4>
+                                            <div class="blog-meta">
+                                                <p>05/04/2019 | <a href="#">Corano</a></p>
+                                            </div>
+                                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ac ante egestas hendrerit. Aliquam et metus pharetra</p>
+                                            <a class="blog-read-more" href="blog-details.html">Read More...</a>
+                                        </div>
+                                    </div>
+                                    <!-- blog post item end -->
+                                </div>
+                                <div class="col-12">
+                                    <!-- blog post item start -->
+                                    <div class="blog-post-item mb-30">
+                                        <figure class="blog-thumb">
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/blog-img5.jpg" alt="blog image">
+                                            </a>
+                                        </figure>
+                                        <div class="blog-content">
+                                            <h4 class="blog-title">
+                                                <a href="blog-details.html">romantic Love Stories Of Hollywood’s Biggest Celebrities</a>
+                                            </h4>
+                                            <div class="blog-meta">
+                                                <p>02/04/2019 | <a href="#">Corano</a></p>
+                                            </div>
+                                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ac ante egestas hendrerit. Aliquam et metus pharetra</p>
+                                            <a class="blog-read-more" href="blog-details.html">Read More...</a>
+                                        </div>
+                                    </div>
+                                    <!-- blog post item end -->
+                                </div>
+                                <div class="col-12">
+                                    <!-- blog post item start -->
+                                    <div class="blog-post-item mb-30">
+                                        <figure class="blog-thumb">
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/blog-img3.jpg" alt="blog image">
+                                            </a>
+                                        </figure>
+                                        <div class="blog-content">
+                                            <h4 class="blog-title">
+                                                <a href="blog-details.html">Celebrity Daughter Opens Up About Having Her Eye Color Changed</a>
+                                            </h4>
+                                            <div class="blog-meta">
+                                                <p>25/03/2019 | <a href="#">Corano</a></p>
+                                            </div>
+                                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ac ante egestas hendrerit. Aliquam et metus pharetra</p>
+                                            <a class="blog-read-more" href="blog-details.html">Read More...</a>
+                                        </div>
+                                    </div>
+                                    <!-- blog post item end -->
+                                </div>
                             </div>
-                        </div>
-                        <!-- Login Content End -->
+                            <!-- blog item wrapper end -->
 
-                        <!-- Register Content Start -->
-                        <div class="col-lg-6">
-                            <div class="login-reg-form-wrap sign-up-form">
-                                <h5>Singup Form</h5>
-                                <form action="#" method="post">
-                                    <div class="single-input-item">
-                                        <input type="text" placeholder="Full Name" required />
-                                    </div>
-                                    <div class="single-input-item">
-                                        <input type="email" placeholder="Enter your Email" required />
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="single-input-item">
-                                                <input type="password" placeholder="Enter your Password" required />
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="single-input-item">
-                                                <input type="password" placeholder="Repeat your Password" required />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-input-item">
-                                        <div class="login-reg-form-meta">
-                                            <div class="remember-meta">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="subnewsletter">
-                                                    <label class="custom-control-label" for="subnewsletter">Subscribe
-                                                        Our Newsletter</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-input-item">
-                                        <button class="btn btn-sqr">Register</button>
-                                    </div>
-                                </form>
+                            <!-- start pagination area -->
+                            <div class="paginatoin-area text-center">
+                                <ul class="pagination-box">
+                                    <li><a class="previous" href="#"><i class="pe-7s-angle-left"></i></a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a class="next" href="#"><i class="pe-7s-angle-right"></i></a></li>
+                                </ul>
                             </div>
+                            <!-- end pagination area -->
                         </div>
-                        <!-- Register Content End -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- login register wrapper end -->
+        <!-- blog main wrapper end -->
     </main>
 
     <!-- Scroll to top start -->
@@ -892,5 +1063,5 @@
 </body>
 
 
-<!-- Mirrored from htmldemo.net/corano/corano/login-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 09:54:01 GMT -->
+<!-- Mirrored from htmldemo.net/corano/corano/blog-list-left-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 09:54:05 GMT -->
 </html>
