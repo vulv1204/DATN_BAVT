@@ -15,7 +15,7 @@
     @yield('style-libs')
 
     <!-- Layout config Js -->
-    <script src="{{asset('theme/admin/assets/js/layout.js')}}"></script>
+    <script src="{{ asset('theme/admin/assets/js/layout.js') }}"></script>
     <!-- Bootstrap Css -->
     <link href="{{ asset('theme/admin/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
@@ -25,7 +25,7 @@
     <!-- custom Css-->
     <link href="{{ asset('theme/admin/assets/css/custom.min.css') }}" rel="stylesheet" type="text/css" />
 
-    
+
 
 </head>
 
