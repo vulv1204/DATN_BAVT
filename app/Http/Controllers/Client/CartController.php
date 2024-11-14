@@ -15,7 +15,7 @@ class CartController extends Controller
         // Lấy tất cả sản phẩm trong giỏ hàng của user_id = 1
         $cartItems = Cart::where('user_id', 1)->with('productSize.product')->get();
 
-        return view('user.cart', compact('cartItems'));
+        return view('client.pages.cart', compact('cartItems'));
     }
 
     public function addToCart(Request $request)
@@ -86,7 +86,7 @@ class CartController extends Controller
 
         // Tính lại tổng giỏ hàng
         $grandTotal = Cart::where('user_id', 1)->get()->sum(function ($item) {
-            return $item->productSize->product->price * $item->quantity;
+            return ($item->productSize->product->price + $item->productSize->price) * $item->quantity;
         });
 
         return response()->json([

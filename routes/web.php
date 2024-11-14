@@ -2,6 +2,7 @@
 
 
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Client\CartController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,10 +17,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('client.index');
 });
 
 
 
 Route::resource('categories', CategoryController::class);
 
+
+Route::get('/cart', [CartController::class, 'showCart'])->name('cart.show');
+
+Route::put('/cart/{id}', [CartController::class, 'update']);
