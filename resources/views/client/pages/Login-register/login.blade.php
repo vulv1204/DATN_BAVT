@@ -2,7 +2,7 @@
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from htmldemo.net/corano/corano/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 09:54:00 GMT -->
+<!-- Mirrored from htmldemo.net/corano/corano/login-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 09:54:01 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -54,8 +54,7 @@
                             <nav aria-label="breadcrumb">
                                 <ul class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i></a></li>
-                                    <li class="breadcrumb-item"><a href="shop.html">shop</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">cart</li>
+                                    <li class="breadcrumb-item active" aria-current="page">login-Register</li>
                                 </ul>
                             </nav>
                         </div>
@@ -65,118 +64,45 @@
         </div>
         <!-- breadcrumb area end -->
 
-        <!-- cart main wrapper start -->
-        <div class="cart-main-wrapper section-padding">
+        <!-- login register wrapper start -->
+        <div class="login-register-wrapper section-padding">
             <div class="container">
-                <div class="section-bg-color">
+                <div class="member-area-from-wrap">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <!-- Cart Table Area -->
-                            <div class="cart-table table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th class="pro-thumbnail">Thumbnail</th>
-                                            <th class="pro-title">Product</th>
-                                            <th class="pro-price">Price</th>
-                                            <th class="pro-quantity">Quantity</th>
-                                            <th class="pro-subtotal">Total</th>
-                                            <th class="pro-remove">Remove</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="assets/img/product/product-1.jpg" alt="Product" /></a></td>
-                                            <td class="pro-title"><a href="#">Diamond Exclusive Ornament</a></td>
-                                            <td class="pro-price"><span>$295.00</span></td>
-                                            <td class="pro-quantity">
-                                                <div class="pro-qty"><input type="text" value="1"></div>
-                                            </td>
-                                            <td class="pro-subtotal"><span>$295.00</span></td>
-                                            <td class="pro-remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="assets/img/product/product-2.jpg" alt="Product" /></a></td>
-                                            <td class="pro-title"><a href="#">Perfect Diamond Jewelry</a></td>
-                                            <td class="pro-price"><span>$275.00</span></td>
-                                            <td class="pro-quantity">
-                                                <div class="pro-qty"><input type="text" value="2"></div>
-                                            </td>
-                                            <td class="pro-subtotal"><span>$550.00</span></td>
-                                            <td class="pro-remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="assets/img/product/product-3.jpg" alt="Product" /></a></td>
-                                            <td class="pro-title"><a href="#">Handmade Golden Necklace</a></td>
-                                            <td class="pro-price"><span>$295.00</span></td>
-                                            <td class="pro-quantity">
-                                                <div class="pro-qty">
-                                                    <input type="text" value="1" />
-                                                </div>
-                                            </td>
-                                            <td class="pro-subtotal"><span>$295.00</span></td>
-                                            <td class="pro-remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="pro-thumbnail"><a href="#"><img class="img-fluid" src="assets/img/product/product-4.jpg" alt="Product" /></a></td>
-                                            <td class="pro-title"><a href="#">Diamond Exclusive Ornament</a></td>
-                                            <td class="pro-price"><span>$110.00</span></td>
-                                            <td class="pro-quantity">
-                                                <div class="pro-qty">
-                                                    <input type="text" value="3" />
-                                                </div>
-                                            </td>
-                                            <td class="pro-subtotal"><span>$110.00</span></td>
-                                            <td class="pro-remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- Cart Update Option -->
-                            <div class="cart-update-option d-block d-md-flex justify-content-between">
-                                <div class="apply-coupon-wrapper">
-                                    <form action="#" method="post" class=" d-block d-md-flex">
-                                        <input type="text" placeholder="Enter Your Coupon Code" required />
-                                        <button class="btn btn-sqr">Apply Coupon</button>
-                                    </form>
-                                </div>
-                                <div class="cart-update">
-                                    <a href="#" class="btn btn-sqr">Update Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-5 ml-auto">
-                            <!-- Cart Calculation Area -->
-                            <div class="cart-calculator-wrapper">
-                                <div class="cart-calculate-items">
-                                    <h6>Cart Totals</h6>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <tr>
-                                                <td>Sub Total</td>
-                                                <td>$230</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Shipping</td>
-                                                <td>$70</td>
-                                            </tr>
-                                            <tr class="total">
-                                                <td>Total</td>
-                                                <td class="total-amount">$300</td>
-                                            </tr>
-                                        </table>
+                        <!-- Login Content Start -->
+                        <div class="col-lg-6">
+                            <div class="login-reg-form-wrap">
+                                <h5>Sign In</h5>
+                                <form action="#" method="post">
+                                    <div class="single-input-item">
+                                        <input type="email" placeholder="Email or Username" required />
                                     </div>
-                                </div>
-                                <a href="checkout.html" class="btn btn-sqr d-block">Proceed Checkout</a>
+                                    <div class="single-input-item">
+                                        <input type="password" placeholder="Enter your Password" required />
+                                    </div>
+                                    <div class="single-input-item">
+                                        <div class="login-reg-form-meta d-flex align-items-center justify-content-between">
+                                            <div class="remember-meta">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="rememberMe">
+                                                    <label class="custom-control-label" for="rememberMe">Remember Me</label>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="forget-pwd">Forget Password?</a>
+                                        </div>
+                                    </div>
+                                    <div class="single-input-item">
+                                        <button class="btn btn-sqr">Login</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
+                        <!-- Login Content End -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- cart main wrapper end -->
+        <!-- login register wrapper end -->
     </main>
 
     <!-- Scroll to top start -->
@@ -409,5 +335,5 @@
 </body>
 
 
-<!-- Mirrored from htmldemo.net/corano/corano/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 09:54:00 GMT -->
+<!-- Mirrored from htmldemo.net/corano/corano/login-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 09:54:01 GMT -->
 </html>

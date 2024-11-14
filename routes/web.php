@@ -16,10 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('index');
 });
 
 
 
 Route::resource('categories', CategoryController::class);
-
