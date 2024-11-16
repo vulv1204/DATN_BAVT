@@ -1,6 +1,5 @@
     <!-- Start Header Area -->
-    <header class="header-area header-wide">
-        <!-- main header start -->
+            <!-- main header start -->
         <div class="main-header d-none d-lg-block">
             <!-- header top start -->
             <div class="header-top bdr-bottom">
@@ -423,5 +422,4 @@
         </aside>
         <!-- off-canvas menu end -->
         <!-- offcanvas mobile menu end -->
-    </header>
     <!-- end Header Area -->
