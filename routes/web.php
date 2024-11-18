@@ -25,6 +25,14 @@ Route::get('/', function () {
 Route::resource('categories', CategoryController::class);
 
 
+// Giỏ hàng
 Route::get('/cart', [CartController::class, 'showCart'])->name('cart.show');
 
-Route::put('/cart/{id}', [CartController::class, 'update']);
+// Áp dụng voucher
+Route::post('/cart/apply-voucher', [CartController::class, 'applyVoucher'])->name('cart.applyVoucher');
+
+// Cập nhật số lượng sản phẩm trong giỏ hàng
+Route::put('/cart/update-quantity', [CartController::class, 'updateQuantity'])->name('cart.updateQuantity');
+
+// Xóa sản phẩm khỏi giỏ hàng
+Route::delete('/cart/remove/{id}', [CartController::class, 'remove'])->name('cart.remove');
