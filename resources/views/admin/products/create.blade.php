@@ -1,7 +1,7 @@
 @extends('admin.layouts.master')
 
 @section('title')
-    Thêm mới sản phẩm
+    {{ $title }}
 @endsection
 
 @section('content')
@@ -12,7 +12,7 @@
 
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Sản phẩm</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('admin.products.index') }}">Sản phẩm</a></li>
                         <li class="breadcrumb-item active">{{ $title }}</li>
                     </ol>
                 </div>
@@ -236,6 +236,7 @@
 
         <div class="d-flex justify-content-center mt-4">
             <button type="submit" class="btn btn-primary">Thêm Mới Sản Phẩm</button>
+            <a class="btn btn-warning ms-5" href="{{ route('admin.products.index') }}">Trở về</a>
         </div>
     </form>
 @endsection
