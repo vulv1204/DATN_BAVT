@@ -51,7 +51,7 @@ class CategoryController extends Controller
             /** @var Category $category */
             $category = Category::query()->create($dataCategory);
 
-            $category->products()->attach($dataCategoryProduct);
+            $category->products()->attach($dataCategoryProduct, ['created_at' => now(), 'updated_at' => now()]);
 
             DB::commit();
 

@@ -120,7 +120,7 @@
 
         <!-- banner statistics area start -->
         <div class="banner-statistics-area">
-            @include('clinet.components.banner-statistics-area');
+            @include('client.components.banner-statistics-area');
         </div>
         <!-- banner statistics area end -->
 
