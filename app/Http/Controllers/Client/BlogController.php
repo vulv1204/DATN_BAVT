@@ -9,6 +9,9 @@ use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
+
+    const PATH_VIEW = 'client.aboutblog.';
+
     public function blog()
     {
         //getAll category
@@ -20,6 +23,14 @@ class BlogController extends Controller
         //getAll blog đăng mới nhất
         $newBlogs = Blog::query()->latest('created_at')->paginate(5);
 
-        return view('client.pages.about-blog.blog', compact('categories', 'blogs', 'newBlogs'));
+        return view(self::PATH_VIEW . __FUNCTION__, compact('categories', 'blogs', 'newBlogs'));
+    }
+
+    public function blogDetail(Blog $blog)
+    {
+        $categories = Category::query()->latest('id')->paginate(5);
+
+        $newBlogs = Blog::query()->latest('created_at')->paginate(5);
+        return view(self::PATH_VIEW . __FUNCTION__, compact('categories', 'blog', 'newBlogs'));
     }
 }

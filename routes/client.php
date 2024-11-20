@@ -16,5 +16,7 @@ Route::prefix('client')
 
         //link den trang blog
         Route::get('/blog', [BlogController::class, 'blog'])->name('blog');
+        Route::get('/blogDetail/{blog}', [BlogController::class, 'blogDetail'])->name('blogDetail');
+        
 
     });
