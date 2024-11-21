@@ -39,7 +39,7 @@
 <body>
     <!-- Start Header Area -->
     <header class="header-area header-wide">
-        @include('client.layout.header')
+        @include('client.layouts.header')
     </header>
     <!-- end Header Area -->
 
@@ -2587,7 +2587,7 @@
 
     <!-- footer area start -->
     <footer class="footer-widget-area">
-        @include('client.layout.footer')
+        @include('client.layouts.footer')
     </footer>
     <!-- footer area end -->
 
